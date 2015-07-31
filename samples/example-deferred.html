@@ -104,7 +104,7 @@ function postJpeg(data) {
 
 
 document.body.onload = function () {
-    if (typeof (FileReader) == "function") {
+    if (typeof (FileReader) == "function" || typeof (FileReader) == "object") {
     } else {
         alert("This example needs FileReader API. To try, use other latest browser.");
     }
